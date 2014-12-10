@@ -105,6 +105,23 @@
                                     </items>
                                 </menu>
                             </menuItem>
+                            <menuItem title="View" id="ZkH-hI-iHW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="View" id="3fP-KF-mrn">
+                                    <items>
+                                        <menuItem title="Home" keyEquivalent="H" id="rHa-TV-lTW">
+                                            <connections>
+                                                <action selector="goHome:" target="Ady-hI-5gd" id="wFI-Ge-CCo"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Refresh" keyEquivalent="r" id="kUe-U0-jqs">
+                                            <connections>
+                                                <action selector="doRefresh:" target="Ady-hI-5gd" id="SZC-lb-0vv"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
@@ -150,6 +167,9 @@
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="720" height="480"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="frameAutosaveName" value="MainTrelloWindow"/>
+                        </userDefinedRuntimeAttributes>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>

@@ -15,21 +15,17 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        goHome(self)
+    }
+    
+    @IBAction func goHome(AnyObject) {
         let url = NSURL(string: "https://trello.com")
         let request = NSURLRequest(URL: url!)
         webView.mainFrame.loadRequest(request)
     }
-
-    override var representedObject: AnyObject? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
     
-    override func viewDidLayout() {
-        super.viewDidLayout()
-        webView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+    @IBAction func doRefresh(AnyObject) {
+        webView.reload(self)
     }
 
 }
