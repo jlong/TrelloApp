@@ -2,6 +2,8 @@
 
 An unofficial wrapper application for Trello.com written in Swift. This is almost the "Hello World" for a site specific browser.
 
+![screenshot](https://github.com/jlong/TrelloApp/raw/master/Assets/screenshot.png)
+
 
 ## License
 
