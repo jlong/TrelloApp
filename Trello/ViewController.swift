@@ -15,6 +15,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let url = NSURL(string: "https://trello.com")
         let request = NSURLRequest(URL: url!)
         webView.mainFrame.loadRequest(request)
@@ -26,7 +27,9 @@ class ViewController: NSViewController {
         }
     }
     
-    
-
+    override func viewDidLayout() {
+        super.viewDidLayout()
+        webView.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height)
+    }
 
 }
