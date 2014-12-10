@@ -12,6 +12,16 @@
 		B60FA24A1A3771CA00B48297 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60FA2491A3771CA00B48297 /* Images.xcassets */; };
 		B60FA24D1A3771CA00B48297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60FA24B1A3771CA00B48297 /* Main.storyboard */; };
 		B60FA2591A3771CA00B48297 /* TrelloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60FA2581A3771CA00B48297 /* TrelloTests.swift */; };
+		B699D6E81A37BCF5005C7E63 /* trello-32@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6DE1A37BCF5005C7E63 /* trello-32@2x.png */; };
+		B699D6E91A37BCF5005C7E63 /* trello-16.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6DF1A37BCF5005C7E63 /* trello-16.png */; };
+		B699D6EA1A37BCF5005C7E63 /* trello-512.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E01A37BCF5005C7E63 /* trello-512.png */; };
+		B699D6EB1A37BCF5005C7E63 /* trello-128.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E11A37BCF5005C7E63 /* trello-128.png */; };
+		B699D6EC1A37BCF5005C7E63 /* trello-256.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E21A37BCF5005C7E63 /* trello-256.png */; };
+		B699D6ED1A37BCF5005C7E63 /* trello-512@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E31A37BCF5005C7E63 /* trello-512@2x.png */; };
+		B699D6EE1A37BCF5005C7E63 /* trello-256@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E41A37BCF5005C7E63 /* trello-256@2x.png */; };
+		B699D6EF1A37BCF5005C7E63 /* trello-128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E51A37BCF5005C7E63 /* trello-128@2x.png */; };
+		B699D6F01A37BCF5005C7E63 /* trello-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E61A37BCF5005C7E63 /* trello-32.png */; };
+		B699D6F11A37BCF5005C7E63 /* trello-16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E71A37BCF5005C7E63 /* trello-16@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,16 @@
 		B60FA2521A3771CA00B48297 /* TrelloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrelloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60FA2571A3771CA00B48297 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B60FA2581A3771CA00B48297 /* TrelloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrelloTests.swift; sourceTree = "<group>"; };
+		B699D6DE1A37BCF5005C7E63 /* trello-32@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-32@2x.png"; sourceTree = "<group>"; };
+		B699D6DF1A37BCF5005C7E63 /* trello-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-16.png"; sourceTree = "<group>"; };
+		B699D6E01A37BCF5005C7E63 /* trello-512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-512.png"; sourceTree = "<group>"; };
+		B699D6E11A37BCF5005C7E63 /* trello-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-128.png"; sourceTree = "<group>"; };
+		B699D6E21A37BCF5005C7E63 /* trello-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-256.png"; sourceTree = "<group>"; };
+		B699D6E31A37BCF5005C7E63 /* trello-512@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-512@2x.png"; sourceTree = "<group>"; };
+		B699D6E41A37BCF5005C7E63 /* trello-256@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-256@2x.png"; sourceTree = "<group>"; };
+		B699D6E51A37BCF5005C7E63 /* trello-128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-128@2x.png"; sourceTree = "<group>"; };
+		B699D6E61A37BCF5005C7E63 /* trello-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-32.png"; sourceTree = "<group>"; };
+		B699D6E71A37BCF5005C7E63 /* trello-16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-16@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +107,16 @@
 		B60FA2431A3771CA00B48297 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B699D6DF1A37BCF5005C7E63 /* trello-16.png */,
+				B699D6E71A37BCF5005C7E63 /* trello-16@2x.png */,
+				B699D6E61A37BCF5005C7E63 /* trello-32.png */,
+				B699D6DE1A37BCF5005C7E63 /* trello-32@2x.png */,
+				B699D6E11A37BCF5005C7E63 /* trello-128.png */,
+				B699D6E51A37BCF5005C7E63 /* trello-128@2x.png */,
+				B699D6E21A37BCF5005C7E63 /* trello-256.png */,
+				B699D6E41A37BCF5005C7E63 /* trello-256@2x.png */,
+				B699D6E01A37BCF5005C7E63 /* trello-512.png */,
+				B699D6E31A37BCF5005C7E63 /* trello-512@2x.png */,
 				B60FA2441A3771CA00B48297 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -189,8 +219,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B699D6EC1A37BCF5005C7E63 /* trello-256.png in Resources */,
 				B60FA24A1A3771CA00B48297 /* Images.xcassets in Resources */,
+				B699D6E81A37BCF5005C7E63 /* trello-32@2x.png in Resources */,
+				B699D6E91A37BCF5005C7E63 /* trello-16.png in Resources */,
 				B60FA24D1A3771CA00B48297 /* Main.storyboard in Resources */,
+				B699D6ED1A37BCF5005C7E63 /* trello-512@2x.png in Resources */,
+				B699D6EF1A37BCF5005C7E63 /* trello-128@2x.png in Resources */,
+				B699D6EA1A37BCF5005C7E63 /* trello-512.png in Resources */,
+				B699D6F01A37BCF5005C7E63 /* trello-32.png in Resources */,
+				B699D6EE1A37BCF5005C7E63 /* trello-256@2x.png in Resources */,
+				B699D6EB1A37BCF5005C7E63 /* trello-128.png in Resources */,
+				B699D6F11A37BCF5005C7E63 /* trello-16@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +437,7 @@
 				B60FA25E1A3771CA00B48297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B60FA25F1A3771CA00B48297 /* Build configuration list for PBXNativeTarget "TrelloTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +446,7 @@
 				B60FA2611A3771CA00B48297 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
