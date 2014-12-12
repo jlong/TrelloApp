@@ -13,9 +13,12 @@ class ViewController: NSViewController {
     
     @IBOutlet var webView: WebView!
     
+    @IBOutlet weak var progressIndicator: NSProgressIndicator!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.policyDelegate = self
+        webView.frameLoadDelegate = self
         goHome(self)
     }
     
@@ -33,6 +36,14 @@ class ViewController: NSViewController {
     
     func loadExternalUrl(url:String) {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: url)!)
+    }
+    
+    override func webView(sender: WebView!, didStartProvisionalLoadForFrame frame: WebFrame!) {
+        progressIndicator.startAnimation(self)
+    }
+    
+    override func webView(sender: WebView!, didFinishLoadForFrame frame: WebFrame!) {
+        progressIndicator.stopAnimation(self)
     }
     
     override func webView(sender: WebView!, decidePolicyForNavigationAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {

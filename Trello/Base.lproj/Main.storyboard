@@ -184,6 +184,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="720" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
+                            <progressIndicator minValue="50" maxValue="100" doubleValue="50" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="l01-pF-KoD">
+                                <rect key="frame" x="344" y="224" width="32" height="32"/>
+                            </progressIndicator>
                             <webView canDrawConcurrently="YES" focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="lmX-so-k1Y">
                                 <rect key="frame" x="0.0" y="0.0" width="720" height="480"/>
                                 <webPreferences key="preferences" identifier="browser" defaultFontSize="16" defaultFixedFontSize="13" minimumFontSize="0"/>
@@ -191,12 +194,17 @@
                         </subviews>
                         <constraints>
                             <constraint firstItem="lmX-so-k1Y" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ELl-zb-XU4"/>
+                            <constraint firstAttribute="bottom" secondItem="l01-pF-KoD" secondAttribute="bottom" constant="224" id="HT8-m5-c61"/>
+                            <constraint firstItem="l01-pF-KoD" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="344" id="Ijh-FA-Abi"/>
                             <constraint firstItem="lmX-so-k1Y" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="LzN-Bw-jFA"/>
+                            <constraint firstAttribute="trailing" secondItem="l01-pF-KoD" secondAttribute="trailing" constant="344" id="bQj-LN-80e"/>
+                            <constraint firstItem="l01-pF-KoD" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="224" id="luO-vT-URI"/>
                             <constraint firstAttribute="bottom" secondItem="lmX-so-k1Y" secondAttribute="bottom" id="pgE-xS-ZIq"/>
                             <constraint firstAttribute="trailing" secondItem="lmX-so-k1Y" secondAttribute="trailing" id="y4L-qG-zTv"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="progressIndicator" destination="l01-pF-KoD" id="HX7-CY-3x1"/>
                         <outlet property="webView" destination="lmX-so-k1Y" id="UaC-11-XgY"/>
                     </connections>
                 </viewController>
