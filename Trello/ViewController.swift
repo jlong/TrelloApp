@@ -19,13 +19,17 @@ class ViewController: NSViewController {
     }
     
     @IBAction func goHome(AnyObject) {
-        let url = NSURL(string: "https://trello.com")
-        let request = NSURLRequest(URL: url!)
-        webView.mainFrame.loadRequest(request)
+        loadUrl("https://trello.com")
     }
     
     @IBAction func doRefresh(AnyObject) {
         webView.reload(self)
+    }
+    
+    func loadUrl(url:NSString) {
+        let nsurl = NSURL(string: url)
+        let request = NSURLRequest(URL: nsurl!)
+        webView.mainFrame.loadRequest(request)
     }
 
 }
