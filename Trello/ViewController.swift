@@ -71,6 +71,7 @@ class ViewController: NSViewController {
     
     override func webView(sender: WebView!, didStartProvisionalLoadForFrame frame: WebFrame!) {
         progressIndicator.startAnimation(self)
+
     }
     
     override func webView(sender: WebView!, didFinishLoadForFrame frame: WebFrame!) {

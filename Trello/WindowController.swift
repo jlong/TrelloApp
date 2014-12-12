@@ -7,9 +7,12 @@
 //
 
 import Cocoa
+import WebKit
 
 class WindowController: NSWindowController {
+
     override func windowDidLoad() {
         window?.titleVisibility = .Hidden
     }
+
 }
