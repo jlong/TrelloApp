@@ -27,9 +27,7 @@ class ViewController: NSViewController {
     }
     
     func loadUrl(url:NSString) {
-        let nsurl = NSURL(string: url)
-        let request = NSURLRequest(URL: nsurl!)
-        webView.mainFrame.loadRequest(request)
+        webView.mainFrameURL = url
     }
-
+    
 }
