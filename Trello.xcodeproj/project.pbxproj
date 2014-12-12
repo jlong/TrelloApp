@@ -22,6 +22,7 @@
 		B699D6EF1A37BCF5005C7E63 /* trello-128@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E51A37BCF5005C7E63 /* trello-128@2x.png */; };
 		B699D6F01A37BCF5005C7E63 /* trello-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E61A37BCF5005C7E63 /* trello-32.png */; };
 		B699D6F11A37BCF5005C7E63 /* trello-16@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B699D6E71A37BCF5005C7E63 /* trello-16@2x.png */; };
+		B6DDEA921A3B68AD0031945D /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6DDEA911A3B68AD0031945D /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B699D6E51A37BCF5005C7E63 /* trello-128@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-128@2x.png"; sourceTree = "<group>"; };
 		B699D6E61A37BCF5005C7E63 /* trello-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-32.png"; sourceTree = "<group>"; };
 		B699D6E71A37BCF5005C7E63 /* trello-16@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "trello-16@2x.png"; sourceTree = "<group>"; };
+		B6DDEA911A3B68AD0031945D /* WindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				B60FA2451A3771CA00B48297 /* AppDelegate.swift */,
+				B6DDEA911A3B68AD0031945D /* WindowController.swift */,
 				B60FA2471A3771CA00B48297 /* ViewController.swift */,
 				B60FA2491A3771CA00B48297 /* Images.xcassets */,
 				B60FA24B1A3771CA00B48297 /* Main.storyboard */,
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60FA2481A3771CA00B48297 /* ViewController.swift in Sources */,
+				B6DDEA921A3B68AD0031945D /* WindowController.swift in Sources */,
 				B60FA2461A3771CA00B48297 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

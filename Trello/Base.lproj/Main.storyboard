@@ -178,12 +178,86 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="Trello" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="Trello" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" unifiedTitleAndToolbar="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="720" height="480"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <toolbar key="toolbar" implicitIdentifier="42108ADD-6052-4FA7-953B-A1FEF66A684B" explicitIdentifier="toolbar" displayMode="iconOnly" sizeMode="regular" id="b9V-jG-FDR">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="3D9FEE34-8A7B-4FD9-9053-FD8C1DD64F31" label="Home" paletteLabel="Home" image="NSHomeTemplate" id="lO7-dK-U1h">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="25"/>
+                                    <size key="maxSize" width="38" height="28"/>
+                                    <button key="view" verticalHuggingPriority="750" id="tav-sB-7Ei">
+                                        <rect key="frame" x="1" y="14" width="38" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSHomeTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t8B-SB-W5A">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="goHome:" target="Oky-zY-oP4" id="3uu-TI-TJe"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="6844DA3A-EC42-48FB-A877-649FA7CE9322" label="Refresh" paletteLabel="Refresh" image="NSRefreshTemplate" id="21h-T1-yxM">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="25"/>
+                                    <size key="maxSize" width="38" height="28"/>
+                                    <button key="view" verticalHuggingPriority="750" id="uJr-yL-Fp5">
+                                        <rect key="frame" x="1" y="14" width="38" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRefreshTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oyp-Fh-hqD">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="doRefresh:" target="Oky-zY-oP4" id="fow-f6-5bD"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="C1DD6DE1-ACAB-44A3-BDB0-BEC0C3616279" label="Back" paletteLabel="Back" image="NSGoLeftTemplate" id="6UP-b5-sG0">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="25"/>
+                                    <size key="maxSize" width="38" height="28"/>
+                                    <button key="view" verticalHuggingPriority="750" id="4N8-Ki-4s4">
+                                        <rect key="frame" x="1" y="14" width="38" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoLeftTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ezV-gK-k4E">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="goBack:" target="Oky-zY-oP4" id="sr5-gt-Xlm"/>
+                                    </connections>
+                                </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="F4B75F04-DC16-4215-B0BF-F03F2128938F" label="Forward" paletteLabel="Forward" image="NSGoRightTemplate" id="MYE-3v-wKv">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="38" height="25"/>
+                                    <size key="maxSize" width="38" height="28"/>
+                                    <button key="view" verticalHuggingPriority="750" id="ln8-iS-pmD">
+                                        <rect key="frame" x="1" y="14" width="38" height="28"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoRightTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RaH-kK-mvj">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                    </button>
+                                    <connections>
+                                        <action selector="goForward:" target="Oky-zY-oP4" id="Zbw-Sa-S10"/>
+                                    </connections>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="lO7-dK-U1h"/>
+                                <toolbarItem reference="21h-T1-yxM"/>
+                                <toolbarItem reference="6UP-b5-sG0"/>
+                                <toolbarItem reference="MYE-3v-wKv"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -201,13 +275,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="720" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <progressIndicator minValue="50" maxValue="100" doubleValue="50" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="l01-pF-KoD">
-                                <rect key="frame" x="344" y="224" width="32" height="32"/>
-                            </progressIndicator>
                             <webView canDrawConcurrently="YES" focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="lmX-so-k1Y">
                                 <rect key="frame" x="0.0" y="0.0" width="720" height="480"/>
                                 <webPreferences key="preferences" identifier="browser" defaultFontSize="16" defaultFixedFontSize="13" minimumFontSize="0"/>
                             </webView>
+                            <progressIndicator minValue="50" maxValue="100" doubleValue="50" displayedWhenStopped="NO" indeterminate="YES" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="l01-pF-KoD">
+                                <rect key="frame" x="344" y="224" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="mBp-fn-g1F"/>
+                                    <constraint firstAttribute="height" constant="32" id="na4-tx-wAA"/>
+                                </constraints>
+                            </progressIndicator>
                         </subviews>
                         <constraints>
                             <constraint firstItem="lmX-so-k1Y" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="ELl-zb-XU4"/>
@@ -230,4 +308,10 @@
             <point key="canvasLocation" x="75" y="924"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSGoLeftTemplate" width="9" height="12"/>
+        <image name="NSGoRightTemplate" width="9" height="12"/>
+        <image name="NSHomeTemplate" width="14" height="14"/>
+        <image name="NSRefreshTemplate" width="11" height="15"/>
+    </resources>
 </document>

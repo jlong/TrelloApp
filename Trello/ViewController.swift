@@ -11,9 +11,13 @@ import WebKit
 
 class ViewController: NSViewController {
     
-    @IBOutlet var webView: WebView!
+    // Attributes
     
+    @IBOutlet weak var webView: WebView!
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
+    
+    
+    // Initialization
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +25,9 @@ class ViewController: NSViewController {
         webView.frameLoadDelegate = self
         goHome(self)
     }
+    
+    
+    // Actions
     
     @IBAction func doRefresh(AnyObject) {
         webView.reload(self)
@@ -39,6 +46,8 @@ class ViewController: NSViewController {
     }
     
     
+    // Supporting functions
+    
     func loadUrl(url:String) {
         webView.mainFrameURL = url
     }
@@ -46,6 +55,9 @@ class ViewController: NSViewController {
     func loadExternalUrl(url:String) {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: url)!)
     }
+    
+    
+    // WebView events
     
     override func webView(sender: WebView!, didStartProvisionalLoadForFrame frame: WebFrame!) {
         progressIndicator.startAnimation(self)
