@@ -193,7 +193,7 @@
                                     <button key="view" verticalHuggingPriority="750" id="tav-sB-7Ei">
                                         <rect key="frame" x="1" y="14" width="38" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSHomeTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="t8B-SB-W5A">
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSHomeTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="t8B-SB-W5A">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -209,7 +209,7 @@
                                     <button key="view" verticalHuggingPriority="750" id="uJr-yL-Fp5">
                                         <rect key="frame" x="1" y="14" width="38" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRefreshTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="oyp-Fh-hqD">
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSRefreshTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="oyp-Fh-hqD">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -225,7 +225,7 @@
                                     <button key="view" verticalHuggingPriority="750" id="4N8-Ki-4s4">
                                         <rect key="frame" x="1" y="14" width="38" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoLeftTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ezV-gK-k4E">
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoLeftTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="ezV-gK-k4E">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -241,7 +241,7 @@
                                     <button key="view" verticalHuggingPriority="750" id="ln8-iS-pmD">
                                         <rect key="frame" x="1" y="14" width="38" height="28"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoRightTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="RaH-kK-mvj">
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSGoRightTemplate" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="RaH-kK-mvj">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -250,12 +250,34 @@
                                         <action selector="goForward:" target="Oky-zY-oP4" id="Zbw-Sa-S10"/>
                                     </connections>
                                 </toolbarItem>
+                                <toolbarItem implicitItemIdentifier="DB3C7362-57E1-41A4-A8FA-A53615BF1002" label="Back/Forward" paletteLabel="Back/Forward" id="vvA-jE-huW">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="58" height="25"/>
+                                    <size key="maxSize" width="58" height="25"/>
+                                    <segmentedControl key="view" verticalHuggingPriority="750" placeholderIntrinsicWidth="58" placeholderIntrinsicHeight="28" id="v3R-Zi-GWt">
+                                        <rect key="frame" x="14" y="14" width="58" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <segmentedCell key="cell" borderStyle="border" alignment="left" style="separated" trackingMode="momentary" id="d8d-lN-jqI">
+                                            <font key="font" metaFont="system"/>
+                                            <segments>
+                                                <segment toolTip="Show the previous page" image="NSGoLeftTemplate" imageScaling="none" width="25">
+                                                    <nil key="label"/>
+                                                </segment>
+                                                <segment image="NSGoRightTemplate" imageScaling="none" width="26" tag="1">
+                                                    <nil key="label"/>
+                                                </segment>
+                                            </segments>
+                                            <connections>
+                                                <action selector="goBackForward:" target="Oky-zY-oP4" id="yCi-LP-5BI"/>
+                                            </connections>
+                                        </segmentedCell>
+                                    </segmentedControl>
+                                </toolbarItem>
                             </allowedToolbarItems>
                             <defaultToolbarItems>
                                 <toolbarItem reference="lO7-dK-U1h"/>
+                                <toolbarItem reference="vvA-jE-huW"/>
                                 <toolbarItem reference="21h-T1-yxM"/>
-                                <toolbarItem reference="6UP-b5-sG0"/>
-                                <toolbarItem reference="MYE-3v-wKv"/>
                             </defaultToolbarItems>
                         </toolbar>
                     </window>

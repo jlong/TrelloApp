@@ -45,6 +45,16 @@ class ViewController: NSViewController {
         webView.goForward()
     }
     
+    @IBAction func goBackForward(sender:NSSegmentedControl) {
+        let tag = sender.selectedSegment
+        if (tag == 0) {
+            webView.goBack()
+        } else {
+            webView.goForward()
+        }
+    }
+    
+    
     
     // Supporting functions
     
