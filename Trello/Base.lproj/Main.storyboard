@@ -105,18 +105,35 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="View" id="ZkH-hI-iHW">
+                            <menuItem title="View" id="WZm-pC-0XT">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="View" id="3fP-KF-mrn">
+                                <menu key="submenu" title="View" id="Jog-b9-T0d">
                                     <items>
+                                        <menuItem title="Reload Page" keyEquivalent="r" id="i0N-aN-zxR">
+                                            <connections>
+                                                <action selector="doRefresh:" target="Ady-hI-5gd" id="D0S-jd-kLi"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="History" id="ZkH-hI-iHW">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="History" id="3fP-KF-mrn">
+                                    <items>
+                                        <menuItem title="Back" keyEquivalent="[" id="Kue-pf-Wmd">
+                                            <connections>
+                                                <action selector="goBack:" target="Ady-hI-5gd" id="SbP-c3-tOg"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Forward" keyEquivalent="]" id="0RV-TL-QY8">
+                                            <connections>
+                                                <action selector="goForward:" target="Ady-hI-5gd" id="izb-dX-O8G"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem title="Home" keyEquivalent="H" id="rHa-TV-lTW">
                                             <connections>
                                                 <action selector="goHome:" target="Ady-hI-5gd" id="wFI-Ge-CCo"/>
-                                            </connections>
-                                        </menuItem>
-                                        <menuItem title="Refresh" keyEquivalent="r" id="kUe-U0-jqs">
-                                            <connections>
-                                                <action selector="doRefresh:" target="Ady-hI-5gd" id="SZC-lb-0vv"/>
                                             </connections>
                                         </menuItem>
                                     </items>

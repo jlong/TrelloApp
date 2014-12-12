@@ -22,13 +22,22 @@ class ViewController: NSViewController {
         goHome(self)
     }
     
+    @IBAction func doRefresh(AnyObject) {
+        webView.reload(self)
+    }
+    
     @IBAction func goHome(AnyObject) {
         loadUrl("https://trello.com")
     }
     
-    @IBAction func doRefresh(AnyObject) {
-        webView.reload(self)
+    @IBAction func goBack(AnyObject) {
+        webView.goBack()
     }
+    
+    @IBAction func goForward(AnyObject) {
+        webView.goForward()
+    }
+    
     
     func loadUrl(url:String) {
         webView.mainFrameURL = url
