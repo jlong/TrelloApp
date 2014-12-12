@@ -15,6 +15,7 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        webView.policyDelegate = self
         goHome(self)
     }
     
@@ -26,8 +27,31 @@ class ViewController: NSViewController {
         webView.reload(self)
     }
     
-    func loadUrl(url:NSString) {
+    func loadUrl(url:String) {
         webView.mainFrameURL = url
     }
     
+    func loadExternalUrl(url:String) {
+        NSWorkspace.sharedWorkspace().openURL(NSURL(string: url)!)
+    }
+    
+    override func webView(sender: WebView!, decidePolicyForNavigationAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, frame: WebFrame!, decisionListener listener: WebPolicyDecisionListener!) {
+        if (sender.isEqual(webView)) {
+            listener.use()
+        } else {
+            let index = actionInformation.indexForKey(WebActionOriginalURLKey)!
+            let pair = actionInformation[index]
+            let url = pair.1.debugDescription! // TODO: Figure out how to convert this into a string properly
+            loadExternalUrl(url)
+            listener.ignore()
+        }
+    }
+    
+    override func webView(webView: WebView!, decidePolicyForNewWindowAction actionInformation: [NSObject : AnyObject]!, request: NSURLRequest!, newFrameName frameName: String!, decisionListener listener: WebPolicyDecisionListener!) {
+        let index = actionInformation.indexForKey(WebActionOriginalURLKey)!
+        let pair = actionInformation[index]
+        let url = pair.1.debugDescription! // TODO: Figure out how to convert this into a string properly
+        loadExternalUrl(url)
+        listener.ignore()
+    }
 }
