@@ -11,8 +11,10 @@ import WebKit
 
 class WindowController: NSWindowController {
 
+    @IBOutlet weak var addressBar: NSTextField!
+    
     override func windowDidLoad() {
         window?.titleVisibility = .Hidden
     }
-
+    
 }

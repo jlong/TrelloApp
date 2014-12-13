@@ -13,16 +13,29 @@ class ViewController: NSViewController {
     
     // Attributes
     
+    var addressBar: NSTextField!
+    var urlTimer: NSTimer!
+    
     @IBOutlet weak var webView: WebView!
     @IBOutlet weak var progressIndicator: NSProgressIndicator!
     
     
     // Initialization
     
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        urlTimer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: "urlTimerTick", userInfo: nil, repeats: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         webView.policyDelegate = self
         webView.frameLoadDelegate = self
+    }
+    
+    override func viewDidAppear() {
+        let wc = self.view.window?.windowController() as WindowController
+        addressBar = wc.addressBar
         goHome(self)
     }
     
@@ -55,7 +68,6 @@ class ViewController: NSViewController {
     }
     
     
-    
     // Supporting functions
     
     func loadUrl(url:String) {
@@ -66,12 +78,17 @@ class ViewController: NSViewController {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: url)!)
     }
     
+    func urlTimerTick() {
+        if (addressBar != nil) {
+            addressBar.stringValue = webView.mainFrameURL
+        }
+    }
+    
     
     // WebView events
     
     override func webView(sender: WebView!, didStartProvisionalLoadForFrame frame: WebFrame!) {
         progressIndicator.startAnimation(self)
-
     }
     
     override func webView(sender: WebView!, didFinishLoadForFrame frame: WebFrame!) {
