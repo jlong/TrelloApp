@@ -31,6 +31,7 @@ class ViewController: NSViewController {
         super.viewDidLoad()
         webView.policyDelegate = self
         webView.frameLoadDelegate = self
+        webView.UIDelegate = self
     }
     
     override func viewDidAppear() {
@@ -58,7 +59,7 @@ class ViewController: NSViewController {
         webView.goForward()
     }
     
-    @IBAction func goBackForward(sender:NSSegmentedControl) {
+    @IBAction func goBackForward(sender: NSSegmentedControl) {
         let tag = sender.selectedSegment
         if (tag == 0) {
             webView.goBack()
@@ -70,11 +71,11 @@ class ViewController: NSViewController {
     
     // Supporting functions
     
-    func loadUrl(url:String) {
+    func loadUrl(url: String) {
         webView.mainFrameURL = url
     }
     
-    func loadExternalUrl(url:String) {
+    func loadExternalUrl(url: String) {
         NSWorkspace.sharedWorkspace().openURL(NSURL(string: url)!)
     }
     
